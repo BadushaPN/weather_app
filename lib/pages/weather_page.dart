@@ -34,12 +34,12 @@ class _WeatherPageState extends State<WeatherPage> {
 
 //weather animation
 //init state
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   //fetch weather on startup
-  //   _fetchWeather();
-  // }
+  @override
+  void initState() {
+    super.initState();
+    //fetch weather on startup
+    _fetchWeather();
+  }
 
   Widget build(BuildContext context) {
     return Scaffold();
