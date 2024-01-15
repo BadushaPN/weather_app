@@ -42,6 +42,14 @@ class _WeatherPageState extends State<WeatherPage> {
   }
 
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          // city name
+
+          // temperature
+        ],
+      ),
+    );
   }
 }
