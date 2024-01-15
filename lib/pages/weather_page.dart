@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:weatherapp/api/api_key.dart';
 import 'package:weatherapp/services/weather_services.dart';
 
@@ -43,12 +44,18 @@ class _WeatherPageState extends State<WeatherPage> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          // city name
-
-          // temperature
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            // city name
+            Text(_weather?.cityName ?? 'loading city..'),
+// animation
+            Lottie.asset("lib/assests/Animation - 1705294431532.json"),
+            // temperature
+            Text("${_weather?.temperature.round()}*c")
+          ],
+        ),
       ),
     );
   }
